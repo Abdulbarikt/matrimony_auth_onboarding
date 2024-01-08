@@ -8,7 +8,6 @@ class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _OnboardingScreenState createState() => _OnboardingScreenState();
 }
 
@@ -35,29 +34,45 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               OnBoardingPage(
                 imagePath: "assets/hand.jpg",
                 title: "Find Your \nSpecial Someone",
-                description: "This is the first page description.",
+                description:
+                    "Discover lasting love on our matrimony app.",
               ),
               OnBoardingPage(
                 imagePath: "assets/hand2.jpg",
-                title: "Find Your \nSpecial Someone",
-                description: "This is the second page description.",
+                title: "Discover Your \nPerfect Match with Ease",
+                description:
+                    "Unlock the door to lasting love stories.",
               ),
               OnBoardingPage(
-                imagePath: "assets/hand3.jpg",
-                title: "Find Your \nSpecial Someone",
-                description: "This is the third page description.",
+                imagePath: "assets/hand4.jpg",
+                title: "Make Finding Love\nan Exciting Adventure",
+                description:
+                    "Our matrimony app fosters lasting relationships.",
               ),
             ],
           ),
-          Positioned(bottom: 0, child: GradientColor(size: size)),
           Positioned(
             bottom: 40,
             left: 20,
-            right: 0,
-            child: SmoothPageIndicator(
-              controller: _pageController,
-              count: 3,
-              effect:const WormEffect(dotHeight: 5, dotWidth: 15),
+            right: 20,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SmoothPageIndicator(
+                  controller: _pageController,
+                  count: 3,
+                  effect: WormEffect(
+                    dotColor: iconColors,
+                    activeDotColor: main_color,
+                    dotHeight: 5,
+                    dotWidth: 15,
+                  ),
+                ),
+                Text(
+                  'Skip',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ],
             ),
           ),
         ],
@@ -93,29 +108,32 @@ class OnBoardingPage extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          child: Padding(
-            padding:  EdgeInsets.only(top: size.height * 0.5,left: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(title,
-                    style: GoogleFonts.poppins(
-                        fontSize: 29,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white)),
-                const SizedBox(height: 20),
-                Text(
-                  description,
-                  style: const TextStyle(
-                    fontSize: 16,
-                    color: Colors.white,
-                  ),
-                  textAlign: TextAlign.center,
+          child: GradientColor(size: size),
+        ),
+        Positioned(
+          left: 10,
+          bottom: size.height * 0.2,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                title,
+                style: GoogleFonts.poppins(
+                  fontSize: 29,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
-                
-              ],
-            ),
+              ),
+              const SizedBox(height: 20),
+              Text(
+                description,
+                maxLines: 4,
+                style: const TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                ),
+              ),
+            ],
           ),
         ),
       ],

@@ -24,11 +24,12 @@ class GradientColor extends StatelessWidget {
         colors: [
           Colors.transparent,
           Colors.transparent,
-          background_primary.withOpacity(0.70),
-          background_primary.withOpacity(0.9),
-          background_primary.withOpacity(1.0),
+          background_primary.withOpacity(0.30),
+          background_primary.withOpacity(0.55),
+          background_primary.withOpacity(0.85),
           background_primary.withOpacity(1.0),
         ],
+        
       )),
     );
   }

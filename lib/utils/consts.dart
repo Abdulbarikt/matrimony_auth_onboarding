@@ -16,6 +16,7 @@ Color accentT = const Color(0xFF34323A);
 Color inactiveAccent = const Color(0xFF494949);
 Color accentSecondary = const Color(0xFF00FFD1);
 Color iconColors = Colors.white;
+Color main_color = const Color(0xFF982F46);
 
 const TextStyle voteAvg = TextStyle(
   color: Colors.white,
