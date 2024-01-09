@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mat_dummy/app/views/login/login_screen.dart';
-import 'package:mat_dummy/app/views/onboarding/on_board1.dart';
 
 
 
