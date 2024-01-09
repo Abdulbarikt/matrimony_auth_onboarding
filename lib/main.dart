@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mat_dummy/app/views/onboarding/on_board1.dart';
 import 'package:mat_dummy/app/views/splash/splash_screen.dart';
 
 void main() {
