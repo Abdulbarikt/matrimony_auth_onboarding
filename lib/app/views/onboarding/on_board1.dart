@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mat_dummy/app/widgets/gradient.dart';
-import 'package:mat_dummy/utils/consts.dart';
+import 'package:mat_dummy/app/views/onboarding/widgets/gradient.dart';
+import 'package:mat_dummy/app/utils/consts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -68,7 +68,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     dotWidth: 15,
                   ),
                 ),
-                Text(
+                const Text(
                   'Skip',
                   style: TextStyle(color: Colors.white),
                 ),
