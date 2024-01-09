@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mat_dummy/utils/consts.dart';
+import 'package:mat_dummy/app/utils/consts.dart';
 
 
 class GradientColor extends StatelessWidget {
