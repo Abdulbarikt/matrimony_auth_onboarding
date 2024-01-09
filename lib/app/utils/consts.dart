@@ -20,9 +20,26 @@ Color main_color = const Color(0xFF982F46);
 Color light_white = const Color(0xFFFFFFFF);
 Color secondary = Color.fromARGB(255, 248, 156, 181);
 
+// --- new color --
+Color newPrimary = const Color(0xFFFD3B60);
+Gradient newGradient = const LinearGradient(
+  begin: Alignment.topLeft,
+  end: Alignment.bottomRight,
+  colors: [
+    Color(0xFFFD3B60), // Start color (#fd3b60)
+    Color(0xFFFF4d4d),
+    Color(0xFFFE5048), // End color (#fe5048)
+  ],
+);
+
 const TextStyle voteAvg = TextStyle(
   color: Colors.white,
   fontSize: 40,
   fontWeight: FontWeight.w500,
 );
 
+//------ Strings -----
+
+const List<String> profileTitle = ['Basic Information','Education','Location','Profile Description'];
+const List<String> basicInformationTitle = ['Name','Religion','Belief','Gender','Age','DOB','Marital Status'];
+const List<IconData> profileIcon = [Icons.girl_rounded,Icons.book,Icons.location_on,Icons.keyboard_double_arrow_right_outlined];

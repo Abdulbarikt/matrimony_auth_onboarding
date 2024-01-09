@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mat_dummy/app/views/profile/profile_screen.dart';
 
 
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
 
      
 
-     home: const SplashScreen(),
+     home: const ProfilePage(),
 
     );
   }
