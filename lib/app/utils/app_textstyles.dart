@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'consts.dart';
 
 class AppTextStyles {
@@ -25,7 +24,6 @@ class AppTextStyles {
     fontSize: 9,
     fontWeight: FontWeight.bold,
   );
-
 //   ------------- Profile ------------------
   static var profileMainTitle = GoogleFonts.poppins(
     color: Colors.black,
@@ -68,5 +66,4 @@ class AppTextStyles {
     fontSize: 14  ,
     // fontWeight: FontWeight.bold,
   );
-
 }

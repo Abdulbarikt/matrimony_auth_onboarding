@@ -37,9 +37,8 @@ const TextStyle voteAvg = TextStyle(
   fontSize: 40,
   fontWeight: FontWeight.w500,
 );
-
 //------ Strings -----
-
 const List<String> profileTitle = ['Basic Information','Education','Location','Profile Description'];
 const List<String> basicInformationTitle = ['Name','Religion','Belief','Gender','Age','DOB','Marital Status'];
 const List<IconData> profileIcon = [Icons.girl_rounded,Icons.book,Icons.location_on,Icons.keyboard_double_arrow_right_outlined];
+
