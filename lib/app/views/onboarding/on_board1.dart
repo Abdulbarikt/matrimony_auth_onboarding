@@ -17,8 +17,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    
-
     return Scaffold(
       backgroundColor: background_primary,
       body: Stack(
@@ -34,20 +32,17 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               OnBoardingPage(
                 imagePath: "assets/hand.jpg",
                 title: "Find Your \nSpecial Someone",
-                description:
-                    "Discover lasting love on our matrimony app.",
+                description: "Discover lasting love on our matrimony app.",
               ),
               OnBoardingPage(
                 imagePath: "assets/hand2.jpg",
                 title: "Discover Your \nPerfect Match with Ease",
-                description:
-                    "Unlock the door to lasting love stories.",
+                description: "Unlock the door to lasting love stories.",
               ),
               OnBoardingPage(
                 imagePath: "assets/hand4.jpg",
                 title: "Make Finding Love\nan Exciting Adventure",
-                description:
-                    "Our matrimony app fosters lasting relationships.",
+                description: "Our matrimony app fosters lasting relationships.",
               ),
             ],
           ),

@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:mat_dummy/app/utils/app_textstyles.dart';
+import 'package:mat_dummy/app/utils/consts.dart';
 import 'package:mat_dummy/app/views/onboarding/on_board1.dart';
 import 'package:mat_dummy/app/views/splash/widgets/ring_icon_animaitoion.dart';
-import 'package:mat_dummy/utils/app_textstyles.dart';
-import 'package:mat_dummy/utils/consts.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
