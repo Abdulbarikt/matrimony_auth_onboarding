@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mat_dummy/app/views/login/login_screen.dart';
 import 'package:mat_dummy/app/views/onboarding/on_board1.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-     home: OnboardingScreen(),
+     home: SliverBar(),
     );
   }
 }
