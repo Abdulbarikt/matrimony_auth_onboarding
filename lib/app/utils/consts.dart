@@ -25,4 +25,3 @@ const TextStyle voteAvg = TextStyle(
   fontSize: 40,
   fontWeight: FontWeight.w500,
 );
-
